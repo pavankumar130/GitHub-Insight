@@ -5,12 +5,20 @@ import App from './App'
 import * as serviceWorker from './serviceWorker'
 import { GithubProvider } from './context/context'
 import { Auth0Provider } from '@auth0/auth0-react'
+
 const root = ReactDOM.createRoot(document.getElementById('root'))
 root.render(
   <React.StrictMode>
-    <GithubProvider>
-      <App />
-    </GithubProvider>
+    <Auth0Provider
+      domain="dev-u2yr3wzl61tispqc.us.auth0.com"
+      clientId="WB21el7YkMa0QbK1phlf0J6F7ZWP6tey"
+      redirectUri={window.location.origin}
+      cacheLocation="localstorage"
+    >
+      <GithubProvider>
+        <App />
+      </GithubProvider>
+    </Auth0Provider>
   </React.StrictMode>
 )
 
