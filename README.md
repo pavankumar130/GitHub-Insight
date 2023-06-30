@@ -3,7 +3,6 @@
 GitHub Insight is a project that focuses on enhancing the user experience and providing comprehensive information about GitHub profiles. The project involves the development of a responsive UI that ensures a seamless user experience while searching for GitHub profiles.
 
 # Technologies Used
-<<<<<<< HEAD
 
 React
 Axios
